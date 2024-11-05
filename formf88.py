@@ -18,6 +18,7 @@ with col4:
 
 # Add images in the header
 st.title("Kenya Passenger Declaration Form (Form F88)")
+st.markdown("""---""")
 st.write("This form must be completed by all passengers arriving in Kenya and presented to customs officials.")
 st.write("Please fill in the details below.")
 
