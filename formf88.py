@@ -1,4 +1,4 @@
-mport streamlit as st
+import streamlit as st
 from datetime import datetime
 
 st.title("Kenya Passenger Declaration Form (Form F88)")
