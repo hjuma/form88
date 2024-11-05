@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import datetime
-from PIL import image 
+from PIL import Image 
 
 
 # Create columns for three images
