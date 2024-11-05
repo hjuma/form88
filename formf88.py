@@ -1,12 +1,29 @@
 import streamlit as st
 from datetime import datetime
 
-st.title("Kenya Passenger Declaration Form (Form F88)")
 
-st.write("""
-This form must be completed by all passengers arriving in Kenya and presented to customs officials.
-Please fill in the details below.
-""")
+# Create columns for three images
+col1, col2, col3, col4 = st.columns(4)
+
+# Display each image in its own column
+with col1:
+    st.image("kra-seeklogo-3.jpeg", width=100)  # Replace with your first image path or URL
+with col2:
+    st.image("Emblem_of_East_African_Community.svg", width=100)  # Replace with your second image path or URL
+with col3:
+    st.image("Coat_of_arms_of_Kenya_Official.svg", width=100)  # Replace with your third image path or URL
+with col4:
+    st.write("FORM F88 CUSTOMS & BORDER CONTROL REGULATIONS 45 (1) (2)")
+
+# Add images in the header
+st.title("Kenya Passenger Declaration Form (Form F88)")
+st.write("This form must be completed by all passengers arriving in Kenya and presented to customs officials.")
+st.write("Please fill in the details below.")
+
+
+
+
+
 
 # Personal and Travel Information
 st.header("Personal and Travel Information")
@@ -37,6 +54,7 @@ commercial_goods = st.checkbox("Goods of commercial value, trade goods, samples,
 filming_equipment = st.checkbox("Filming equipment")
 other_articles = st.checkbox("Other articles to declare (firearms, dangerous/prohibited items)")
 
+
 # Detailed Declaration (if any items are checked)
 if any([animal_products, valuable_goods, spirits, perfumes, tobacco_products, currency_exceeding_limit, commercial_goods, filming_equipment, other_articles]):
     st.subheader("Details of Declared Items")
@@ -53,4 +71,5 @@ signature_date = st.date_input("Date", datetime.now())
 # Submit Button
 if st.button("Submit"):
     st.success("Form submitted successfully! Please present it to Customs officials upon arrival.")
+
 
