@@ -7,11 +7,11 @@ col1, col2, col3, col4 = st.columns(4)
 
 # Display each image in its own column
 with col1:
-    st.image("kra-seeklogo-3.jpeg", width=100)  # Replace with your first image path or URL
+    st.image("/mount/src/form88/kra-seeklogo-3.jpeg", width=100)  # Replace with your first image path or URL
 with col2:
-    st.image("Emblem_of_East_African_Community.svg", width=100)  # Replace with your second image path or URL
+    st.image("/mount/src/form88/Emblem_of_East_African_Community.svg", width=100)  # Replace with your second image path or URL
 with col3:
-    st.image("Coat_of_arms_of_Kenya_Official.svg", width=100)  # Replace with your third image path or URL
+    st.image("/mount/src/form88/Coat_of_arms_of_Kenya_Official.svg", width=100)  # Replace with your third image path or URL
 with col4:
     st.write("FORM F88 CUSTOMS & BORDER CONTROL REGULATIONS 45 (1) (2)")
 
